@@ -22,7 +22,7 @@ class VoiceAssistantApp:
 
             pygame.mixer.init()
             self.recognizer = sr.Recognizer()
-
+            
             # Campo superior com botão de configuração
             self.top_frame = tk.Frame(root, bg="#1e1e1e")
             self.top_frame.pack(fill="x", padx=10, pady=(10, 0))

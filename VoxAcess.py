@@ -22,7 +22,7 @@ class VoiceAssistantApp:
 
             pygame.mixer.init()
             self.recognizer = sr.Recognizer()
-            
+             
             # Campo superior com botão de configuração
             self.top_frame = tk.Frame(root, bg="#1e1e1e")
             self.top_frame.pack(fill="x", padx=10, pady=(10, 0))
@@ -64,7 +64,6 @@ class VoiceAssistantApp:
         
 
     def on_mic_press(self):
-        # Anima o botão (escurece temporariamente)
         self.mic_button.config(bg="#333")
         self.root.after(150, lambda: self.mic_button.config(bg="#1e1e1e"))
 

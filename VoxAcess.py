@@ -10,6 +10,7 @@ from PIL import Image, ImageTk
 from playsound import playsound
 import pygame
 import threading
+import pywhatkit
 
 class VoiceAssistantApp:
     def __init__(self, root):
@@ -102,10 +103,10 @@ class VoiceAssistantApp:
 
         elif "abrir youtube" in command:
             webbrowser.open("https://youtube.com")
-
+        
         elif "tocar" in command:
             music = command.replace("tocar", "").strip()
-            webbrowser.open(f"https://www.youtube.com/results?search_query={music}")
+            pywhatkit.playonyt(music)
         
         elif "pesquise" in command:
             query = command.replace("Pesquisar", "").strip()

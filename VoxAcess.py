@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-import speech_recognition as sr
+import speech_recognition as sr # a biblioteca mais importante para reconhecimento de voz
 import os
 import webbrowser
 from datetime import datetime
@@ -13,6 +13,8 @@ import threading
 import pywhatkit
 
 class VoiceAssistantApp:
+    #interface gráfica do assistente de voz
+    # Configuração inicial da aplicação-------------------------------------------------------------------------------------
     def __init__(self, root):
             self.root = root
             self.root.title("VoxAcess")
@@ -24,7 +26,7 @@ class VoiceAssistantApp:
             pygame.mixer.init()
             self.recognizer = sr.Recognizer()
              
-            # Campo superior com botão de configuração
+            # Campo superior com botão de configuração-----------------------------------------------------------------------
             self.top_frame = tk.Frame(root, bg="#1e1e1e")
             self.top_frame.pack(fill="x", padx=10, pady=(10, 0))
 
@@ -43,7 +45,7 @@ class VoiceAssistantApp:
                 text="Clique no microfone para começar...",
                 bg="#2a2a2a",
                 fg="white",
-                font=("Arial", 10),
+                font=("Italic", 15),
                 wraplength=250,
                 justify="center"
             )
@@ -114,9 +116,16 @@ class VoiceAssistantApp:
 
         elif "abrir bloco de notas" in command:
             os.system("notepad.exe")
+         
+        elif "é hora de codar" in command: 
+            self.feedback_label.config(text="Hora de codar! Vamos lá!")
+            os.startfile("C:\Users\joaog\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk")
 
         elif "abrir calculadora" in command:
             os.system("calc.exe")
+        
+        elif "Abra o Whatsapp" in command:
+            webbrowser.open("https://web.whatsapp.com")
 
         elif "que horas são" in command:
             agora = datetime.now().strftime("%H:%M")

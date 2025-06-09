@@ -71,6 +71,19 @@ Projeto criado para a matéria de Tópicos integradores em C.C
         ...
         ...
 ```
+## Lista de comandos
+* abrir chrome
+* abrir google
+* abrir youtube
+* tocar
+* pesquise
+* abrir bloco de notas
+* é hora de codar
+* abrir calculadora
+* Abra o Whatsapp
+* que horas são
+* sair
+
 
 ## :handshake: Colaboradores
 <table>

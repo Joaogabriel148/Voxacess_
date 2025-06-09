@@ -10,7 +10,7 @@ Projeto criado para a matéria de Tópicos integradores em C.C
 * Python
 * Tkinter
 
-## : Interface Gráfica
+## Interface Gráfica
 <img src='img\Captura de tela 2025-06-08 193853.png'>
 
 ## :game_die: Etapa Das Análises

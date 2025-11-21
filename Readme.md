@@ -72,18 +72,22 @@ Projeto criado para a matéria de Tópicos integradores em C.C
         ...
 ```
 ## Lista de comandos
-* abrir chrome
+<!-- * abrir chrome -->
 * abrir google
 * abrir youtube
-* tocar
+* tocar: (nome da música)
 * pesquise
 * abrir bloco de notas
-* é hora de codar
+<!-- * é hora de codar -->
 * abrir calculadora
 * Abra o Whatsapp
 * que horas são
 * sair
 
+## Implementações futuras
+* inicialização em segundo plano
+* atualização do frontend
+* adição de novos comandos
 
 ## :handshake: Colaboradores
 <table>

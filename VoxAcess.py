@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-import speech_recognition as sr # a biblioteca mais importante para reconhecimento de voz
+import speech_recognition as sr # a biblioteca para o reconhecimento de voz
 import os
 import webbrowser
 from datetime import datetime
@@ -13,7 +13,6 @@ import threading
 import pywhatkit
 
 class VoiceAssistantApp:
-    #interface gráfica do assistente de voz
     # Configuração inicial da aplicação-------------------------------------------------------------------------------------
     def __init__(self, root):
             self.root = root
@@ -25,7 +24,7 @@ class VoiceAssistantApp:
 
             pygame.mixer.init()
             self.recognizer = sr.Recognizer()
-             
+            
             # Campo superior com botão de configuração-----------------------------------------------------------------------
             self.top_frame = tk.Frame(root, bg="#1e1e1e")
             self.top_frame.pack(fill="x", padx=10, pady=(10, 0))
@@ -83,7 +82,7 @@ class VoiceAssistantApp:
     def listen_command(self):
         try:
             with sr.Microphone() as source:
-                self.feedback_label.config(text="🎧 Ouvindo...")
+                self.feedback_label.config(text="Ouvindo...")
                 self.root.update()
                 audio = self.recognizer.listen(source, timeout=5)
                 command = self.recognizer.recognize_google(audio, language="pt-BR").lower()
@@ -117,9 +116,9 @@ class VoiceAssistantApp:
         elif "abrir bloco de notas" in command:
             os.system("notepad.exe")
          
-        elif "é hora de codar" in command: 
-            self.feedback_label.config(text="Hora de codar! Vamos lá!")
-            os.startfile("C:\Users\joaog\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk")
+        # elif "é hora de codar" in command: 
+        #     self.feedback_label.config(text="Hora de codar! Vamos lá!")
+        #     os.startfile("C:\Users\joaog\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk")
 
         elif "abrir calculadora" in command:
             os.system("calc.exe")

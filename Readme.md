@@ -1,19 +1,19 @@
 <h1 align="center"> VoxAcess</h1>
 
-## :memo: Descrição
+## Descrição
 Projeto criado para a matéria de Tópicos integradores em C.C
 
-## :books: Contextualização
+## Contextualização
 * <b>Contextualização </b>: A aplicação em si e um assistente virtual que tem como funcionalidades: abrir aplicativos, fazer pesquisas e etc.
 
-## :wrench: Tecnologias utilizadas
+## Tecnologias utilizadas
 * Python
 * Tkinter
 
 ## Interface Gráfica
 <img src='img\Captura de tela 2025-06-08 193853.png'>
 
-## :game_die: Etapa Das Análises
+## Etapa Das Análises
 - interface gráfica
   - Interface gráfica criada a partir de uma biblioteca do python chamada de Tkinter
   
@@ -89,7 +89,7 @@ Projeto criado para a matéria de Tópicos integradores em C.C
 * atualização do frontend
 * adição de novos comandos
 
-## :handshake: Colaboradores
+## Colaboradores
 <table>
   <tr>
     <td align="center">
